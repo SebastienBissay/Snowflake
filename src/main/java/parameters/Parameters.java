@@ -1,5 +1,7 @@
 package parameters;
 
+import processing.core.PVector;
+
 import java.lang.reflect.Field;
 import java.util.Collections;
 import java.util.HashMap;
@@ -7,6 +9,18 @@ import java.util.Map;
 
 public final class Parameters {
     public static final long SEED = 11;
+    public static final int WIDTH = 2000;
+    public static final int HEIGHT = 2000;
+    public static final PVector ORIGIN = new PVector(WIDTH / 2f, HEIGHT / 2f);
+    public static final int NUMBER_OF_ITERATIONS = 1000;
+    public static final int NUMBER_OF_STARTING_POINTS = 1000;
+    public static final float STARTING_DISTANCE_FACTOR = WIDTH / 3f;
+    public static final float STARTING_DISTANCE_EXPONENT = 1.75f;
+    public static final float NOISE_SCALE = .01f;
+    public static final float LENGTH_VARIANCE = 5f;
+    public static final float ROTATION_VARIANCE = .01f;
+    public static final Color BACKGROUND_COLOR = new Color(240, 235, 230);
+    public static final Color STROKE_COLOR = new Color(15, 30, 40, 5);
 
     /**
      * Helper method to extract the constants in order to save them to a json file
